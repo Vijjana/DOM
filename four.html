@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>name</title>
+    </head>
+
+<body>
+    <link rel = "stylesheet" href = "./dom.css">
+    <hr></hr>
+    <h1 id =  "marrygold">Here is an output</h1>
+    <hr>
+    
+    </hr>
+    
+    <input type = "text" id = "firstName" placeholder = "enter firstname">
+    <button onclick = "output()">click me</button><br>
+    <input type = "text" id = "lastName" placeholder = "enter lastname">
+    <button onclick = "put()">click me</button><br>
+    <input type = "text" id = "firstNameAndLastName" placeholder = "enter both">
+    <button onclick = "result()">click me</button><br>
+    <input type = "text" id = "Location" placeholder = "enter location">
+    <button onclick = "answer()">click me</button><br>
+</body>
+</html>
+<script>
+    function output(){
+        let firstName = document.getElementById("firstName").value;
+        document.getElementById("marrygold").innerText = firstName;
+    }
+    function put(){
+        let lastName = document.getElementById("lastName").value;
+        document.getElementById("marrygold").innerText = lastName;
+    }
+    function result(){
+        let firstNameAndLastName = document.getElementById("firstNameAndLastName").value;
+        document.getElementById("marrygold").innerText = firstNameAndLastName;
+    }
+    function answer(){
+        let Location = document.getElementById("Location").value;
+        document.getElementById("marrygold").innerText = Location;
+    }
+
+
+</script>
